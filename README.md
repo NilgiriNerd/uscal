@@ -41,3 +41,17 @@ public class CacheConfiguration {
     
 ```
 
+Subsequently use the uscalCacheManager in the Spring Cache Annotations
+
+
+```java
+	@Cacheable(cacheNames="globalCache",cacheManager="uscalCacheManager",....)
+	public QuoteDTO getQuote(...){
+		...
+		...
+	}
+	
+```
+
+
+
