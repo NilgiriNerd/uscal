@@ -1,0 +1,28 @@
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+jar {
+	baseName = 'uscal'
+	version = '0.0.1-SNAPSHOT'
+}
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+	maven { url "https://repo.spring.io/libs-release" }
+	maven { url "https://repo.spring.io/gemstone-release-cache"}
+}
+
+
+dependencies {
+	compile('org.springframework:spring-beans:4.3.3.RELEASE')
+	compile('org.springframework:spring-core:4.3.3.RELEASE')
+	compile('org.springframework:spring-context:4.3.3.RELEASE')
+	compile('org.springframework:spring-aop:4.3.3.RELEASE')
+	compile('org.springframework:spring-expression:4.3.3.RELEASE')
+	//compile('org.springframework.boot:spring-boot-starter-data-gemfire')
+	testCompile ('junit:junit:4.12')
+	//testCompile('org.springframework.boot:spring-boot-starter-test')
+}

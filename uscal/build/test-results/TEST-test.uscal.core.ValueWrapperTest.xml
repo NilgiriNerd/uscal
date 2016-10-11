@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test.uscal.core.ValueWrapperTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-10-11T02:37:29" hostname="saturn.local" time="0.0">
+  <properties/>
+  <testcase name="testValueWrapper" classname="test.uscal.core.ValueWrapperTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
