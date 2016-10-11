@@ -21,22 +21,22 @@ public class CacheConfiguration {
     @Primary
     @Bean(name="cacheManager")
     public CacheManager cacheManager() throws Exception {
-        GemfireCacheManager cacheManager = new GemfireCacheManager();
-        cacheManager.setCache((Cache) getClientCache());
+    	GemfireCacheManager cacheManager = new GemfireCacheManager();
+		cacheManager.setCache((Cache) getClientCache());
 
-        return cacheManager;
+		return cacheManager;
     }    
 	
     @Bean(name="uscalCacheManager")
     public USCALCacheManager myCacheManager() throws Exception {
-    	USCALCacheManager mycachemanager = new USCALCacheManager();
-       return mycachemanager;
+		USCALCacheManager mycachemanager = new USCALCacheManager();
+		return mycachemanager;
     }    
 	  
     @Bean
     public ITagGenerator tagGenerator(){
-    	ITagGenerator tg = new DefaultTagGenerator();
-    	return tg;
+		ITagGenerator tg = new DefaultTagGenerator();
+		return tg;
     }
     
 ```
