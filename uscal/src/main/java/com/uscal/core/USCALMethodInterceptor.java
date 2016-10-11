@@ -4,7 +4,13 @@ import org.aopalliance.intercept.MethodInterceptor;
 import org.aopalliance.intercept.MethodInvocation;
 import org.springframework.cache.support.SimpleValueWrapper;
 
-
+/**
+ * Intercepts the calls to Cache methods and includes the unquie identified
+ * provided by TagGenerator
+ * 
+ * @author NilgiriNerd
+ *
+ */
 public class USCALMethodInterceptor implements MethodInterceptor {
 
 	ITagGenerator tg;
