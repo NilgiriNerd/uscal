@@ -76,10 +76,12 @@ public class USCALMethodInterceptor implements MethodInterceptor {
 			
 			
 			return o;
+		} else {
+			Object o = invocation.proceed();
+			
+			return o;
 		}
 		
-		return null;
-
 	}
 
 }
