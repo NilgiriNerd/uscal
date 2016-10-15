@@ -37,7 +37,7 @@ public class CacheConfiguration {
 		ClientCache cache = (ClientCache) ccf.getObject();
 
 		System.out.println("about to create proxy");
-		cache.createClientRegionFactory(ClientRegionShortcut.PROXY).create("discoverdeals_offerlist");
+		cache.createClientRegionFactory(ClientRegionShortcut.PROXY).create("quote");
 
 		System.out.println("proxy created");
 
