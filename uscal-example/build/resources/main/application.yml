@@ -1,0 +1,13 @@
+cache: 
+  gemfire:
+    locators:
+      - host: 172.17.0.1
+        port: 12345
+      - host: 172.17.0.2      
+        port: 12345
+    readTimeout: 100
+    minConnections: 1 
+    maxConnections: 10
+    
+        
+    
