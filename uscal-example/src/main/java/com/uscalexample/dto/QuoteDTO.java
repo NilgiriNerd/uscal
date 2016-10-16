@@ -1,12 +1,16 @@
 package com.uscalexample.dto;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 
-public class QuoteDTO {
+public class QuoteDTO implements Serializable {
 	String code = "";
 	String time = "";
 	BigDecimal  price = null;
 	
+	public QuoteDTO(){
+		
+	}
 	
 	public QuoteDTO(String code, String time, BigDecimal price){
 		this.code = code;

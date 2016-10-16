@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Component;
 
 import com.uscalexample.dto.QuoteDTO;
@@ -13,6 +14,7 @@ public class MyBO {
 	
 	private static final SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd:hh:mm:ss");
 	
+	@Cacheable(cacheNames="quote",key="#code")
 	public QuoteDTO quote(String code){
 		System.out.println("Getting data from the backend");
 		String dateStr = sdf.format(new Date());
