@@ -4,9 +4,11 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 
 public class QuoteDTO implements Serializable {
-	String code = "";
-	String time = "";
-	BigDecimal  price = null;
+	private static final long serialVersionUID = 1L;
+
+	private String code = "";
+	private String time = "";
+	private BigDecimal  price = null;
 	
 	public QuoteDTO(){
 		
